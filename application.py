@@ -33,8 +33,6 @@ SCOPE = ("playlist-modify-public playlist-modify-private "
          "playlist-read-collaborative playlist-read-private")
 
 
-
-
 stored_info = {}
 
 class ComparePlaylistForm(FlaskForm):

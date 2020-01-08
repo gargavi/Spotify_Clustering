@@ -18,6 +18,14 @@ CLIENT_ID = 'f48bed994e9a4ab9a939688387022cb2'
 CLIENT_SECRET = '4a31ad0a2e5540e6a8b0486cc2915ffe'
 redirect_uri = 'http://localhost:8888/callback/'
 
+CLIENT_SIDE_URL = "http://spotifyanalysis.us-west-2.elasticbeanstalk.com"
+PORT = 8080
+REDIRECT_URI = "{}/playlists".format(CLIENT_SIDE_URL)
+SCOPE = ("playlist-modify-public playlist-modify-private "
+         "playlist-read-collaborative playlist-read-private")
+
+
+
 scope = 'user-library-read user-library-modify playlist-modify-public playlist-modify-private'
 
 #this function generates a Spotipy Instance via the token method
@@ -30,12 +38,15 @@ def generate_host():
         raise ValueError('enter valid credentials')
     return sp
 
+
+print(REDIRECT_URI)
 client_credentials_manager = SpotifyClientCredentials(CLIENT_ID, CLIENT_SECRET)
 
 #this method generates a Spotipy Instance using a client credentials method -> Doesn't allow user specific access
 
 sp = generate_host()
 
+input()
 print(sp.track("3YU6vJbjYUG0tiJyXf9x5V"))
 def gather_library(number):
     listsongs = [[
