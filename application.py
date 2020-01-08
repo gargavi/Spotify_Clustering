@@ -382,4 +382,4 @@ def get_prefs():
 
 #this just runs the function
 if __name__ == "__main__":
-    application.run(debug=True, port=PORT)
+    application.run(port=PORT)
