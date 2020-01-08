@@ -26,7 +26,7 @@ bootstrap = Bootstrap(application)
 #REDIRECT_URI = "{}:{}/playlists".format(CLIENT_SIDE_URL, PORT)
 #SCOPE = ("playlist-modify-public playlist-modify-private "
   #       "playlist-read-collaborative playlist-read-private")
-CLIENT_SIDE_URL = "spotifyanalysis.us-west-2.elasticbeanstalk.com"
+CLIENT_SIDE_URL = "http://spotifyanalysis.us-west-2.elasticbeanstalk.com"
 PORT = 8080
 REDIRECT_URI = "{}/playlists".format(CLIENT_SIDE_URL)
 SCOPE = ("playlist-modify-public playlist-modify-private "
