@@ -21,11 +21,19 @@ application.secret_key = "something_else"
 bootstrap = Bootstrap(application)
 
 # Flask Parameters
-CLIENT_SIDE_URL = "http://127.0.0.1"
+#CLIENT_SIDE_URL = "http://127.0.0.1"
+#PORT = 8080
+#REDIRECT_URI = "{}:{}/playlists".format(CLIENT_SIDE_URL, PORT)
+#SCOPE = ("playlist-modify-public playlist-modify-private "
+  #       "playlist-read-collaborative playlist-read-private")
+CLIENT_SIDE_URL = "spotifyanalysis.us-west-2.elasticbeanstalk.com"
 PORT = 8080
-REDIRECT_URI = "{}:{}/playlists".format(CLIENT_SIDE_URL, PORT)
+REDIRECT_URI = "{}/playlists".format(CLIENT_SIDE_URL)
 SCOPE = ("playlist-modify-public playlist-modify-private "
          "playlist-read-collaborative playlist-read-private")
+
+
+
 
 stored_info = {}
 
@@ -382,4 +390,4 @@ def get_prefs():
 
 #this just runs the function
 if __name__ == "__main__":
-    application.run(port=PORT)
+    application.run(host='0.0.0.0')

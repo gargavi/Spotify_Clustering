@@ -2,49 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be6cb0d2-fc5a-4650-aa21-103769ea0fbc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/counts.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_0.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_11.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_12.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_13.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_14.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_15.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_16.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_17.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_18.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_19.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_20.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_21.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_22.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_23.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_24.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_25.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_26.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_27.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_28.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_29.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_30.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_31.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_32.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_33.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_34.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_35.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_36.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_37.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_38.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_39.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_7.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist_9.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,14 +46,14 @@
         <counts>
           <entry key="dummy" value="11" />
           <entry key="html" value="8779" />
-          <entry key="py" value="20771" />
+          <entry key="py" value="20778" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="8779" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="20771" />
+          <entry key="Python" value="20778" />
         </counts>
       </usages-collector>
     </session>
@@ -118,15 +77,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="378">
+              <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1578524014383" expanded="true" signature="1045:2054" ph="..." />
-                <marker date="1578524014383" expanded="true" signature="1227:1328" ph="..." />
-                <marker date="1578524014383" expanded="true" signature="3120:3191" ph="..." />
-                <marker date="1578524014383" expanded="true" signature="6134:10504" ph="..." />
-                <marker date="1578524014383" expanded="true" signature="7712:10502" ph="..." />
+                <marker date="1578525282446" expanded="true" signature="1306:2315" ph="..." />
+                <marker date="1578525282446" expanded="true" signature="1488:1589" ph="..." />
+                <marker date="1578525282446" expanded="true" signature="3381:3452" ph="..." />
+                <marker date="1578525282446" expanded="true" signature="6395:10765" ph="..." />
+                <marker date="1578525282446" expanded="true" signature="7973:10763" ph="..." />
               </folding>
             </state>
           </provider>
@@ -246,6 +205,7 @@
         <option value="$PROJECT_DIR$/templates/rename.html" />
         <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/flaskfile.py" />
+        <option value="$PROJECT_DIR$/application.py" />
       </list>
     </option>
   </component>
@@ -433,6 +393,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27125505" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -655,15 +616,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="378">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1578524014383" expanded="true" signature="1045:2054" ph="..." />
-            <marker date="1578524014383" expanded="true" signature="1227:1328" ph="..." />
-            <marker date="1578524014383" expanded="true" signature="3120:3191" ph="..." />
-            <marker date="1578524014383" expanded="true" signature="6134:10504" ph="..." />
-            <marker date="1578524014383" expanded="true" signature="7712:10502" ph="..." />
+            <marker date="1578525282446" expanded="true" signature="1306:2315" ph="..." />
+            <marker date="1578525282446" expanded="true" signature="1488:1589" ph="..." />
+            <marker date="1578525282446" expanded="true" signature="3381:3452" ph="..." />
+            <marker date="1578525282446" expanded="true" signature="6395:10765" ph="..." />
+            <marker date="1578525282446" expanded="true" signature="7973:10763" ph="..." />
           </folding>
         </state>
       </provider>
