@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% for piece in playlists %}
+        <div class = "row">
+            {% for item in piece %}
+            <div class = "column" >
+                <div class = "thumbnail" >
+                    {% if item["images"] %}
+                        <img src= "{{item['images'][0]['url']}}" alt = "Playlist image" height = "100" width = "100">
+                    {% endif %}
+                    <div class = "caption" >
+                        <h5> {{item["name"]}}</h5>
+                        <p> <a href = "{{item['external_urls']['spotify']}}"> Link to Playlist </a></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+    {% endfor %}
+{% endblock %}
+

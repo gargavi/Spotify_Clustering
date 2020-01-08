@@ -1,0 +1,19 @@
+
+
+{% extends "bootstrap/base.html" %}
+    {% block body_attribs %}
+        background = "https://previews.123rf.com/images/pavalena/pavalena1209/pavalena120900048/15389740-light-blue-abstract-background-music-notes.jpg"
+    {% endblock %}
+
+
+        {% block navbar %}
+            <nav class = "navbar navbar-expand-sm">
+                <ul class = "navbar-nav" >
+                    <li class = "nav-item" style = "font-size: 30 px" >
+                        <a href= "{{url_for('index')}}"> Home </a>
+                    </li>
+                </ul>
+            </nav>
+        {% endblock %}
+        {% block content %}
+        {% endblock %}

@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block body_attribs %}
+    background = "https://images-na.ssl-images-amazon.com/images/I/316FSDek9sL._AC_SY450_.jpg"
+{% endblock %}
+
+{% block content %}
+
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <img align = "center" src= "{{dictionary['image']}}" height = "200" width = "200">
+            </div>
+            <div class = "col-md-6">
+                <h4> Song List and Analysis </h4>
+                <form action = "" method = "post">
+                    <p style = "font-family: garamond"> Select Some Values  </p>
+                    <p> {{form.choices }} </p>
+                    <p> {{form.submit }} </p>
+                </form>
+            </div>
+        </div>
+        <div class = "row">
+            <div class = "col-md-6">
+                <h3> Songs in the Playlist {{dictionary["name"]}} </h3>
+                <ol>
+                    {% for item in dictionary["tracks"] %}
+                    <li> <b> {{item[0]}} by {{item[1]}}</b> </li>
+                    {% endfor %}
+                </ol>
+            </div>
+            <div class = "col-md-6">
+                <h3 style = "font-family: garamond"> A Brief Analysis of the Songs </h3>
+                <ol>
+                    <li> <b> Mean Danceability: </b> {{dictionary["danceability"]}} </li>
+                    <li> <b> Mean Tempo: </b> {{dictionary["tempo"]}} </li>
+                    <li> <b> Mean Popularity: </b> {{dictionary["popularity"]}} </li>
+                    <li> <b> Mean Loudness: </b> {{dictionary["loudness"]}} </li>
+                    <li> <b> Mean Mode: </b> {{dictionary["mode"]}} </li>
+                    <li> <b> Mean Energy: </b> {{dictionary["energy"]}} </li>
+                    <li> <b> Mean Speech: </b> {{dictionary["speechiness"]}} </li>
+                    <li> <b> Mean Instrumental: </b> {{dictionary["instrumentalness"]}} </li>
+                    <li> <b> Mean Liveliness: </b> {{dictionary["liveness"]}} </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+{% endblock %}

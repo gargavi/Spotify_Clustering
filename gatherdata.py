@@ -36,6 +36,7 @@ client_credentials_manager = SpotifyClientCredentials(CLIENT_ID, CLIENT_SECRET)
 
 sp = generate_host()
 
+print(sp.track("3YU6vJbjYUG0tiJyXf9x5V"))
 def gather_library(number):
     listsongs = [[
         "id",
@@ -128,6 +129,8 @@ def dummy_genre(song_df):
         song_df[a] = values
 
 
+
+
 def inornah(list, a):
     if a in list:
         return 1
@@ -150,9 +153,13 @@ def song_dataframe(number, rewrite):
     else:
         return pd.read_csv("output.csv",encoding = "cp1252" )
 
+
+
+input()
 song_df = song_dataframe(2500, False)
 
 
+#
 #new goal is to analyze the playlists themselves
 
 playlist_dic = gather_playlist()
@@ -168,7 +175,6 @@ for key, value in playlist_dic.items():
             all_items.append(item)
         if len(tracks["items"]) < 100:
             max = False
-            
     relevant_ids = []
     for item in all_items:
         relevant_ids.append(item["track"]["id"])
@@ -182,11 +188,8 @@ for key, value in playlist_dic.items():
 pd.DataFrame.from_dict(mapping_dic).to_csv("mapping.csv")
 
 
-
-
-print(song_df.columns)
-
-
 #lots left to do, but we can do a lot of work with this; very excited to work on this project
     #do preliminary analysis and such in jupyter but we can work with flask framework to add
-    #a variety of functionality and exploration features 
+    #a variety of functionality and exploration features
+
+p
