@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class = "container">
+        <div class = "row">
+            <p> <b> Pick a couple songs that you think best exemplify the division between the playlists </b></p>
+               {% import "bootstrap/wtf.html" as wtf %}
+			        {{ wtf.quick_form(form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

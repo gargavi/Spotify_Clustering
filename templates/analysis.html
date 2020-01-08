@@ -9,7 +9,9 @@
     <div class = "container">
         <div class = "row">
             <div class = "col-md-6">
-                <img align = "center" src= "{{dictionary['image']}}" height = "200" width = "200">
+                {% if dictionary["image"] %}
+                    <img align = "center" src= "{{dictionary['image']}}" height = "200" width = "200">
+                {% endif %}
             </div>
             <div class = "col-md-6">
                 <h4> Song List and Analysis </h4>
@@ -32,15 +34,16 @@
             <div class = "col-md-6">
                 <h3 style = "font-family: garamond"> A Brief Analysis of the Songs </h3>
                 <ol>
-                    <li> <b> Mean Danceability: </b> {{dictionary["danceability"]}} </li>
-                    <li> <b> Mean Tempo: </b> {{dictionary["tempo"]}} </li>
-                    <li> <b> Mean Popularity: </b> {{dictionary["popularity"]}} </li>
-                    <li> <b> Mean Loudness: </b> {{dictionary["loudness"]}} </li>
-                    <li> <b> Mean Mode: </b> {{dictionary["mode"]}} </li>
-                    <li> <b> Mean Energy: </b> {{dictionary["energy"]}} </li>
-                    <li> <b> Mean Speech: </b> {{dictionary["speechiness"]}} </li>
-                    <li> <b> Mean Instrumental: </b> {{dictionary["instrumentalness"]}} </li>
-                    <li> <b> Mean Liveliness: </b> {{dictionary["liveness"]}} </li>
+                    <li> <b> Mean</b> <a href="/playlist/furtheranalysis/danceability/{{dictionary['id']}}"> Danceability: </a> {{dictionary["danceability"]}} </li>
+                    <li> <b> Mean</b> <a href="/playlist/furtheranalysis/tempo/{{dictionary['id']}}"> Tempo: </a>  {{dictionary["tempo"]}} </li>
+                    <li> <b> Mean</b> <a href="/playlist/furtheranalysis/popularity/{{dictionary['id']}}"> Popularity </a> {{dictionary["popularity"]}} </li>
+                    <li> <b> Mean</b> <a href="/playlist/furtheranalysis/loudness/{{dictionary['id']}}"> Loudness </a> {{dictionary["loudness"]}} </li>
+                    <li> <b> Mean </b> <a href="/playlist/furtheranalysis/mode/{{dictionary['id']}}"> Mode </a> {{dictionary["mode"]}} </li>
+                    <li> <b> Mean </b> <a href="/playlist/furtheranalysis/energy/{{dictionary['id']}}">Energy </a> {{dictionary["energy"]}} </li>
+                    <li> <b> Mean </b> <a href="/playlist/furtheranalysis/speechiness/{{dictionary['id']}}"> Speech </a> {{dictionary["speechiness"]}} </li>
+                    <li> <b> Mean </b> <a href="/playlist/furtheranalysis/instrumentalness/{{dictionary['id']}}"> Instrumentalness </a> {{dictionary["instrumentalness"]}} </li>
+                    <li> <b> Mean </b> <a href="/playlist/furtheranalysis/liveness/{{dictionary['id']}}"> Liveness </a> {{dictionary["liveness"]}} </li>
+                     <li> <b> Mean </b> <a href="/playlist/furtheranalysis/valence/{{dictionary['id']}}"> Valence </a> {{dictionary["valence"]}} </li>
                 </ol>
             </div>
         </div>

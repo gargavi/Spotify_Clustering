@@ -18,7 +18,7 @@ CLIENT_ID = 'f48bed994e9a4ab9a939688387022cb2'
 CLIENT_SECRET = '4a31ad0a2e5540e6a8b0486cc2915ffe'
 redirect_uri = 'http://localhost:8888/callback/'
 
-scope = 'user-library-read user-library-modify'
+scope = 'user-library-read user-library-modify playlist-modify-public playlist-modify-private'
 
 #this function generates a Spotipy Instance via the token method
 def generate_host():
@@ -153,10 +153,12 @@ def song_dataframe(number, rewrite):
     else:
         return pd.read_csv("output.csv",encoding = "cp1252" )
 
-
-
-input()
+a = gather_playlist()
+print(sp.user_playlist(sp.current_user()["id"],a["Stats"] ))
 song_df = song_dataframe(2500, False)
+songs = song_df["id"]
+print(songs.shape)
+#sp.user_playlist_add_tracks(sp.current_user()["id"], a["Stats"], songs[1:134567])
 
 
 #
@@ -179,7 +181,6 @@ for key, value in playlist_dic.items():
     for item in all_items:
         relevant_ids.append(item["track"]["id"])
     playlist_df = song_df[song_df["id"].isin(relevant_ids)]
-    print(key, playlist_df.shape)
     playlist_df.to_csv("playlist_" + str(number) + ".csv")
     mapping_dic["number"].append(number)
     mapping_dic["name"].append(key)
@@ -188,8 +189,9 @@ for key, value in playlist_dic.items():
 pd.DataFrame.from_dict(mapping_dic).to_csv("mapping.csv")
 
 
-#lots left to do, but we can do a lot of work with this; very excited to work on this project
-    #do preliminary analysis and such in jupyter but we can work with flask framework to add
-    #a variety of functionality and exploration features
 
-p
+
+#<!--- <form action="" class="form-inline" method="post" name="shuffle">
+                                       #     <button type = "submit" class="btn btn-primary" name = "Delete" value = "{{}}"> Delete? </button>
+                                        #    <button type = "submit" class="btn btn-primary" name = "Rename" value = "renameplaylist"> Rename? </button>
+		                               # </form> -->

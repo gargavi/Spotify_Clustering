@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 style = "font-family: garamond" align = "center"> <b> {{name}} </b></h1>
+    <div class="container">
+        <div class = "row">
+            <div class = "col-md-6">
+                {% for item in image %}
+                    <img src="data:image/png;base64,{{item}}" width = 475>
+                {% endfor %}
+            </div>
+            <div class = "col-md-6">
+                <ol stlye="font-family: garamond">
+                    {% for item in elements %}
+                        <li> <b> {{item[0]}} </b>  by <b> {{item[1]}}</b></li>
+                    {% endfor %}
+                </ol>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+{% endblock %}

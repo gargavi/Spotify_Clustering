@@ -8,6 +8,16 @@
     </div>
     <div class = "container">
     <div class = "row">
+            <div class = "col-sm-6 col-sm-3">
+                <div class = "thumbnail">
+                    <img src = "https://www.soundslikenashville.com/wp-content/uploads/2010/04/Music-CountryMusicIsLove.jpg">
+                    <div class = "caption">
+                        <h4> Miscellaneous Features </h4>
+                        <p> <a href= "/addsongs" class = "btn btn-primary" role = "button" > Add Songs</a></p>
+                        <p> <a href = "/analyzeplaylists" class = "btn btn-primary" role = "button"> Analyze Library</a></p>
+                    </div>
+                </div>
+            </div>
         {% for item in playlists %}
             <div class = "col-sm-6 col-sm-3">
                 <div class = "thumbnail" >
@@ -20,9 +30,14 @@
                                 <div class = "col-md-6">
                                     <h4 style = "font-family: garamond"> {{item["name"]}}</h4>
                                     <p> <a href = "{{item['external_urls']['spotify']}}"> Link to Playlist </a> </p>
-                                    <p> <a href = "../playlist/analysis/{{item['id']}} " class = "btn btn-primary" role = "button"> Analyze </a> </p>
-                                    <p> <a href = "../playlist/divide/{{item['id']}}" class = "btn btn-primary" role = "button" > Divide </a> </p>
+                                    <p> <a href = "../playlist/analysis/{{item['id']}} " class = "btn btn-primary" role = "button"> Analyze </a>
+                                        <a href = "../playlist/divide/{{item['id']}}" class = "btn btn-primary" role = "button" > Divide </a>
+                                    </p>
+                                    <p>
+                                        <a href = "/rename/{{item['id']}}" class = "btn btn-primary" role = "button" > Rename? </a>
+                                    </p>
                                 </div>
+
                             </div>
                         </div>
                     </div>

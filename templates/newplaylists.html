@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class = "container" >
+        <div class = "row">
+            <div class = "col-md-6">
+                {% if first != None %}
+                    <div class = "thumbnail">
+                        {% if first['images'] %}
+                            <img src= "{{first['images'][0]['url']}}" alt = "Playlist image">
+                        {% endif %}
+                        <div class = "caption">
+                            <p> <a href = "{{first['external_urls']['spotify']}}"> Link to Playlist </a> </p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class = "col-md-6">
+                {% if second != None %}
+                    <div class = "thumbnail">
+                        {% if second['images'] %}
+                            <img src= "{{second['images'][0]['url']}}" alt = "Playlist image">
+                        {% endif %}
+                        <div class = "caption">
+                            <p> <a href = "{{second['external_urls']['spotify']}}"> Link to Playlist </a> </p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

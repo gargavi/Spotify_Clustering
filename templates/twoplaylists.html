@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-6">
+                <h2> <b> The First Playlist </b></h2>
+                    <ul>
+                        {% for item in first %}
+                            <li> {{item[0]}} by {{item[1]}} </li>
+                        {% endfor %}
+                     </ul>
+            </div>
+            <div class= "col-md-6">
+                <h2> <b> The Second Playlist </b></h2>
+                    <ul>
+                        {% for item in second %}
+                            <li> {{item[0]}} by {{item[1]}} </li>
+                        {% endfor %}
+                    </ul>
+            </div>
+        </div>
+        {% import "bootstrap/wtf.html" as wtf %}
+                {{ wtf.quick_form(form) }}
+    </div>
+{% endblock %}
