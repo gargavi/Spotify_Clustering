@@ -382,9 +382,10 @@ def get_prefs():
     Args:
         path: String path to a plist file.
     """
-    prefs = {'ClientID' : '736c6d788bf64c14b63fd2128ab2aa3d',
-             'ClientSecret': '5a2963a1c61f411ca5e9f714cebb198b'}
+    prefs = {'ClientID' : 'f48bed994e9a4ab9a939688387022cb2',
+             'ClientSecret': '4a31ad0a2e5540e6a8b0486cc2915ffe'}
     return prefs
+
 
 #this just runs the function
 if __name__ == "__main__":
